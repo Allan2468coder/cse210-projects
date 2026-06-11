@@ -5,7 +5,9 @@ namespace EternalQuest
     public class EternalGoal : Goal
     {
         public EternalGoal(string name, string description, int points)
-            : base(name, description, points) {}
+            : base(name, description, points)
+        {
+        }
 
         public override int RecordEvent()
         {
@@ -15,7 +17,7 @@ namespace EternalQuest
 
         public override bool IsComplete()
         {
-            return false; // Eternal goals never complete
+            return false;
         }
 
         public override string GetStringRepresentation()
