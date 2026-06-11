@@ -1,18 +1,18 @@
 using System;
 
-public class Swimming : Activity
+public class Running : Activity
 {
-    private int _laps;
+    private double _distance;
 
-    public Swimming(DateTime date, int minutes, int laps)
+    public Running(DateTime date, int minutes, double distance)
         : base(date, minutes)
     {
-        _laps = laps;
+        _distance = distance;
     }
 
     public override double GetDistance()
     {
-        return _laps * 50 / 1000.0;
+        return _distance;
     }
 
     public override double GetSpeed()
